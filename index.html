@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <script src="JS/home.js"></script>
+    <meta charset="utf-8">
+      <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">   <!-- salesforce linkage -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <title>Herbalife Independent Distributor</title>
+      </META>
+  </head>
+  <body>
+    
+    <div class="Top">
+        <a href="home.html">
+          <div><img src="logo.png" alt="Herbalife Logo" height="100%" width="100%"></div>
+        </a>
+        <div class="Top-1" id="page_head"><p>Welcome TO Herbalife Nutrition</p></div>
+    </div>
+
+<!-- <div class="navbar-header">
+  <nav class="navbar-default navbar-fixed-default">
+
+    <ul class="nav nav-tabs"> -->
+      <!-- <li><a href="home.html">&nbsp &nbsp &nbsp &nbsp &nbspHome</a></li> -->
+      <!-- <div class="dropdown">
+<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Our Products
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Food products</a></li>
+    <li><a href="#">Energy and Fitness</a></li>
+    <li><a href="#">Targetted Nutrition</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div> -->
+      <!-- <li><a href="products.html">Products</a></li> -->
+      <!-- <li><a href="about.html">About Us </a></li> -->
+      <!-- <li><a href="contact.html">Contact us</a></li> -->
+      <!-- <ul class="nav nav-pills red" > -->
+        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target ="#bs-example-navbar-collapse-1" aria-expanded="false" name="button"></button> -->
+        <!-- <span class="sr-only">Toggle Navigation</span> -->
+        <!-- <span class="icon-bar"></span> -->
+        <!-- <span class="icon-bar"></span> -->
+        <!-- <span class="icon-bar"></span> -->
+        <!-- </button> -->
+        <!-- <li role="presentation" class="active" ><a href="home.html">Home</a></li> -->
+
+        <!-- <li role="presentation">
+          <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Our Products
+          <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="#">Food products</a></li>
+          <li><a href="#">Energy and Fitness</a></li>
+          <li><a href="#">Targetted Nutrition</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+          </ul>
+          </div>
+        </li> -->
+        <!-- <li role="presentation"><a href="products.html">Products</a></li> -->
+
+  <!-- <li role="presentation"><a href="about.html">About Us </a></li>
+
+  <li role="presentation"><a href="contact.html">Contact us</a></li>
+    </ul>
+
+
+</nav> -->
+
+<nav class="navbar-default navbar-fixed-default">
+
+    <ul class="nav nav-tabs">
+      <ul class="nav nav-pills " >
+        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target ="#bs-example-navbar-collapse-1" aria-expanded="false" name="button"></button> -->
+        <!-- <span class="sr-only">Toggle Navigation</span> -->
+        <!-- <span class="icon-bar"></span> -->
+        <!-- <span class="icon-bar"></span> -->
+        <!-- <span class="icon-bar"></span> -->
+        <!-- </button> -->
+        <li role="presentation"  ><button onclick='home()' class='btn .btn'><strong>Home</strong></button></li>
+
+        <li role="presentation">
+          <div class="dropdown">
+          <button class="btn dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+          <strong>Our Products</strong>
+          <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><button onclick="weightManagement()" class="btn form-control colorChange"> Weight Management </button></li>
+          <li><button onclick="energyAndFitness()" class="form-control btn colorChange"> Energy and Fitness </button></li>
+          <li><button onclick="targetedNutrition()" class="btn form-control colorChange">Targeted Nutrition</button></li>
+
+          </ul>
+          </div>
+        </li>
+        <!-- <li role="presentation"  class="active"><a href="contact.html">Contact us</a></li> -->
+        <li  role="presentation" class="active"><button onclick='contact()' class='btn .btn'><strong>Contact us</strong></button></li>
+<!--          special here,using href with onclick-->
+          <li  role="presentation" class="active" ><button onclick="location.href='checkout.html'" class='btn .btn' style="float: right;"><strong>Checkout</strong></button></li>
+          </ul></ul></nav>
+      
+<div id="angular_function">
+      <a href="#" onclick="energyAndFitness();"><img src="1.jpg" alt="Herbalife Image" height="450vw%" width="100%vw" id="slideshow"></a>
+      <a href="#" onclick="weightManagement();"><img src="MidImage.jpg" alt="Herbalife Image" height="100%" width="100%"></a>
+      <a href="#" onclick="targetedNutrition();"><img src="1.jpg" alt="Herbalife Image" height="30%" width="100%"></a>
+      <a href="#" onclick="energyAndFitness();"><img src="2.jpg" alt="Herbalife Image" height="100%" width="100%"></a>
+      <a href="#" onclick="targetedNutrition();"><img src="3.jpg" alt="Herbalife Image" height="30%" width="100%" ></a>
+<div class="container">
+  <div class="jumbotron">
+    <div><h1>Herbalife India Athletes Work & Play Hard
+</div>
+           <div class="embed-responsive embed-responsive-16by9">
+               <iframe width="640" height="360" src="https://www.youtube.com/embed/XfCYChNRJuA" frameborder="0" allowfullscreen></iframe>
+       </div>
+
+
+</div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+      </ul>
+
+
+
+
+</div>
+<footer style="padding: 20px; border-top: 1px solid #eee; margin-top: 25px;">
+  <div class="container">
+  <div class="text-muted text-center">
+    Copyright © Sanchit Aggarwal<br><center>9560766238</center>
+  </div>
+    </div>
+</footer>
+      </body>
+</html>
+
+
+
+

@@ -1,0 +1,80 @@
+.pull-right
+{
+    float: right;
+}
+.colorChange:hover
+{
+    background-color:#C1EE0A ;
+}
+.hideIT
+{
+  display: none;
+}
+
+.btn
+{
+  background-color: #C1EE0A;
+  color: black;
+}
+.Top
+{
+  display: flex;
+    background-color: #77EE47;;
+C4F109
+}
+.Top-1
+{
+  color: #ffffff;
+  padding-left: 5%;
+
+  font-size: 5vw;
+}
+
+.navbar-default {
+    background-color:  #33ff33;
+    border-color: #E7E7E7;
+}
+.nav-pills>li>a:hover {
+	background-color: #FF6699;
+}
+.nav-pills .open>a, .nav-pills .open>a:active, .nav-pills .open>a:focus{
+	background-color: #FF6699;
+}
+.jumbotron{
+    height: 100vh;
+}
+.inner_panel
+{
+display: flex;
+}
+.jumbotron
+{
+    height: 27%;
+}
+.cart{
+  display: flex;
+}
+.col-1
+{
+  width: 8%;
+}
+.col-2
+{
+  width: 25%;
+}
+.col-3
+{
+  width: 30%;
+}
+.col-4
+{
+  width: 15%;
+}
+.col-5
+{
+  width: 15%;
+}
+.flexer
+{
+display:flex;
+}

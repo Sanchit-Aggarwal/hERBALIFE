@@ -1,0 +1,54 @@
+/**
+{
+	font-family: 'Indie Flower';
+
+}*/
+span
+{
+	font-weight: 600px;
+}
+a
+{
+	color: black;
+}
+.logo
+{
+	display: flex;
+	background-color: orange;
+}
+.body
+{
+	display: flex;
+	
+}
+.col1
+{
+	width: 33.33%;
+	
+	color: orange;
+}
+
+.col2
+{
+	width: 33.33%;
+	
+	color: orange;
+}
+
+.col3
+{
+	width: 33.33%;
+	
+	color: orange;
+}
+
+.x
+{
+	padding: 10px;
+}
+
+@media only screen and (max-width: 300px){
+	p{
+		background-color: blue;
+	}
+}

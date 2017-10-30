@@ -1,0 +1,383 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<script src="JS/home.js"></script>
+
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+   <!-- salesforce linkage -->
+
+
+
+
+      <link rel="stylesheet" href="home.css">
+      <link rel="stylesheet" href="contact.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <meta charset="utf-8">
+         <title></title>
+      </META>
+    </head>
+  
+  <body>
+   
+    <div class="Top">
+        <a href="home.html">
+          <div><img src="logo.png" alt="Herbalife Logo" height="100%" width="100%"></div>
+        </a>
+        <div class="Top-1" id="page_head"><p>Place Order</p></div>
+    </div>
+
+<!-- <div class="navbar-header">
+  <nav class="navbar-default navbar-fixed-default">
+
+    <ul class="nav nav-tabs"> -->
+      <!-- <li><a href="home.html">&nbsp &nbsp &nbsp &nbsp &nbspHome</a></li> -->
+      <!-- <div class="dropdown">
+<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Our Products
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Food products</a></li>
+    <li><a href="#">Energy and Fitness</a></li>
+    <li><a href="#">Targetted Nutrition</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div> -->
+      <!-- <li><a href="products.html">Products</a></li> -->
+      <!-- <li><a href="about.html">About Us </a></li> -->
+      <!-- <li><a href="contact.html">Contact us</a></li> -->
+      <!-- <ul class="nav nav-pills red" > -->
+        <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target ="#bs-example-navbar-collapse-1" aria-expanded="false" name="button"></button> -->
+        <!-- <span class="sr-only">Toggle Navigation</span> -->
+        <!-- <span class="icon-bar"></span> -->
+        <!-- <span class="icon-bar"></span> -->
+        <!-- <span class="icon-bar"></span> -->
+        <!-- </button> -->
+        <!-- <li role="presentation" class="active" ><a href="home.html">Home</a></li> -->
+
+        <!-- <li role="presentation">
+          <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Our Products
+          <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="#">Food products</a></li>
+          <li><a href="#">Energy and Fitness</a></li>
+          <li><a href="#">Targetted Nutrition</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+          </ul>
+          </div>
+        </li> -->
+        <!-- <li role="presentation"><a href="products.html">Products</a></li> -->
+
+  <!-- <li role="presentation"><a href="about.html">About Us </a></li>
+
+  <li role="presentation"><a href="contact.html">Contact us</a></li>
+    </ul>
+
+
+</nav> -->
+
+<nav class="navbar-default navbar-fixed-default">
+	<br>
+
+    <button onclick="location.href='home.html'" class="form-control greenOnHover"><center><strong>GO BACK TO HOME</strong></center> </button>
+        <br>
+
+          <!-- now here js will load all home things but currently it would not work on again loading contact -->
+          </nav>
+
+      <div class='container'>
+        
+      <div id='userInfo'></div>
+      </div>
+      
+<!--      to all ids 0 is added to last to diff from salesforce ones-->
+      <div id='hi'>
+          <div class="container">
+ <label for="first_name0">First Name</label><input type="text" class="form-control" id="first_name0" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="last_name0">Last Name</label><input type="text" class="form-control" id="last_name0" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<label for="email0">Email</label><input type="email" class="form-control" id="email0" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="00N7F000006qoxW000">Address</label><textarea class="form-control" a class="form-control"   id="00N7F000006qoxW0" name="00N7F000006qoxW" rows="3" type="text" wrap="soft"></textarea>
+
+<label for="city0">City</label><input type="text" class="form-control" id="city0" maxlength="40" name="city" size="20" type="text" /><br>
+
+<label for="state0">State/Province</label><input type="text" class="form-control" id="state0" maxlength="20" name="state" size="20" type="text" /><br>
+
+<label for="zip0">Zip</label><input  id="zip0" type="number" class="form-control" maxlength="20" name="zip0" size="20" type="text" /><br>
+
+<label for="phone0">Phone</label><input type="phone" class="form-control" id="phone0" maxlength="40" name="phone" size="20" type="text" /><br>
+          
+<center><button class='btn .btn' onclick='proceed()'>Click to proceed</button></center>     
+      </div>
+
+      </div>
+      <div class="container">
+          
+          <div id="CartHeading"></div>
+          <div id="cart">
+             
+          </div>
+          <div id="cart1">
+          </div>
+          
+<!--          cart total, col-1 .. etc used to give right justification-->
+          <div class="flexer">
+              <div class="col-1"></div>
+              <div class="col-2"></div>
+              <div class="col-3"></div>
+<!--              <div class="col-4"></div>-->
+              <div  id="showCartTotal"></div>
+          </div>
+      
+        
+      
+      <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+<div id='placeOrderButton'></div>
+
+<input type=hidden name="oid" value="00D7F000000sO42">
+<input type=hidden name="retURL" value="http://aggarwal.ml/home_checkout.html">
+
+
+<input type=hidden id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<input type=hidden id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<input type=hidden  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<input type=hidden   id="company" maxlength="40" name="company" size="20" type="text" /><br>
+
+<input type=hidden   id="city" maxlength="40" name="city" size="20" type="text" /><br>
+
+<input type=hidden   id="state" maxlength="20" name="state" size="20" type="text" /><br>
+
+<input type=hidden   id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<input  type=hidden  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
+          
+<textarea class="hideIT" a class="form-control"   id="00N7F000006qoxW" name="00N7F000006qoxW" rows="3" type="text" wrap="soft"></textarea>          
+
+<textarea  class="hideIT" type=hidden  id="00N7F0000091uxw" name="00N7F0000091uxw" rows="3" type="text" wrap="soft"></textarea><br>
+
+<input  type=hidden  id="00N7F000006qoyA" name="00N7F000006qoyA" size="20" type="text" /><br>
+
+          <input type=hidden id="00N7F000006qoyA" name="00N7F000006qoyA" size="20" type="text" />
+
+</form>
+          
+    </body></html>
+      
+      
+      
+      
+      
+      
+      
+      
+     
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <script>
+          var cartCount=0;
+          var totalCartValue=0;
+          var first_name;
+              var last_name;
+              var email;
+              var address;
+              var city;
+              var state;
+              var zip;
+              var phone;
+          var flag=0;//to check if all feilds are filled or not
+         
+          var arrayOfItemsBoughtAndQuantity=" ";
+          function proceed()
+          {
+              var first_name=document.getElementById('first_name0').value;
+              var last_name=document.getElementById('last_name0').value;
+              var email=document.getElementById('email0').value;
+              var address=document.getElementById('00N7F000006qoxW0').value;
+              var city=document.getElementById('city0').value;
+              var state=document.getElementById('state0').value;
+              var zip=document.getElementById('zip0').value;
+              var phone=document.getElementById('phone0').value;
+              
+               if(!(first_name && last_name && email && address && city && state && zip && phone))
+              {
+                  alert("Kindly fill all values!");
+              }
+              else{ //execute if all form values are filled
+                  
+              
+              
+              //Feeding values into salesforce form
+              
+              
+              
+              document.getElementById('first_name').value=first_name;
+              document.getElementById('last_name').value=last_name;
+              document.getElementById('email').value=email;
+              document.getElementById('00N7F000006qoxW').value=address;
+              document.getElementById('city').value=city;
+              document.getElementById('state').value=state;
+              document.getElementById('zip').value=zip;
+              document.getElementById('phone').value=phone;
+              
+              
+              
+              
+              
+              
+            
+              document.getElementById('userInfo').innerHTML='<h3>Buyer Details</h3><div class="jumbotron container"></p>' +first_name+'<br>'+last_name+'<br>'+email+'<br> '+' '+address+'<br> '+city+''+state+''+zip+'<br>Contact# '+phone+"</div>";
+              
+              document.getElementById("CartHeading").innerHTML='<h3>Cart Details</h3>';
+              document.getElementById("cart").innerHTML='<div class="jumbotron">Your cart is currently Empty</div>';
+              
+              
+              /*<p><h3>Buyer Details</h3></p><h5> First Name: </h5>" +first_name+"<h5> Last Name: </h5>"+last_name+"<h5> Email Address: </h5>"+email+"<h5> Address: </h5>"+address+"<h5> City: </h5>"+city+"<h5> State: </h54>"+state+"<h5> Pincode: </h5>"+zip+"<h5> Contact Number: </h5>"+phone*/
+              
+           document.getElementById('hi').innerHTML=           
+                              '<br><div class="container"><h3>ADD Items To Cart</h3><div class="jumbotron container">Product Interest:<select class="form-control" id="00N7F000003dFjX" name="00N7F000003dFjX" title="Product Interest" required><option value="">--None--</option><option value="Formula-1 Nutritional Shake Mix">Formula-1 Nutritional Shake Mix</option><option value="Personalized Protein Powder(200 gms)">Personalized Protein Powder(200 gms)</option><option value="Personalized Protein Powder(400 gms)">Personalized Protein Powder(400 gms)</option></select><br>Quantity:<select class="form-control" id="00N7F000006qoxq" name="00N7F000006qoxq" title="Quantity" required><option value="">--None--</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10 (MAXIMUM)</option></select><br><h4>Item price:</h4><div id="item_price"><strong></strong></div> <p/><p/>Total Amount:<div id="total_price"><strong></strong></div> <p/><center><button class="btn .btn" onclick="findValue()">Compute Amount</button>&nbsp &nbsp<button class="btn .btn" onclick="addToCart()">ADD to cart</button></center></div></div>';
+                           
+              
+          }//else block end
+          }
+          function findValue()
+          {
+              item=document.getElementById("00N7F000003dFjX").value;
+               qty=document.getElementById('00N7F000006qoxq').value;
+              if(!(item && qty))
+              {
+                  alert("Kindly fill all values!");
+              }
+              else{//execute if both values are filled
+                  
+              
+              var item_price;
+              var item;
+              var qty;
+              
+                
+                    if(item==="Formula-1 Nutritional Shake Mix")
+                    {
+                        item_price=1788;   
+                    }
+                    else if(item==="Personalized Protein Powder(200 gms)")
+                        {
+                            item_price=1061;   
+                        }
+                    else if(item==="Personalized Protein Powder(400 gms)")
+                        {
+                            item_price=2036;   
+                        }
+        document.getElementById('item_price').innerHTML=" ₹ "+item_price+"/-";
+               document.getElementById('total_price').innerHTML=" ₹ "+(qty*item_price)+"/-";
+          }//else block ends
+          }
+          function addToCart()
+          {
+              var item_price;
+              var item;
+              var qty;
+              item=document.getElementById("00N7F000003dFjX").value;
+              qty=document.getElementById('00N7F000006qoxq').value;
+               if(!(item && qty))
+              {
+                  alert("Kindly fill all values!");
+              }
+              else{ //do this if form is filled
+                  
+              
+                cartCount++;
+                    if(item==="Formula-1 Nutritional Shake Mix")
+                    {
+                        item_price=1788;   
+                    }
+                    else if(item==="Personalized Protein Powder(200 gms)")
+                        {
+                            item_price=1061;   
+                        }
+                    else if(item==="Personalized Protein Powder(400 gms)")
+                        {
+                            item_price=2036;   
+                        }
+        //document.getElementById('item_price').innerHTML="Rs."+item_price+"/-";
+        
+       // document.getElementById('total_price').innerHTML="Rs."+(qty*item_price)+"/-";
+              
+              if(cartCount==1)// To replace empty cart for first time, we do not use +=, we use innerhtml=
+                  {
+                      alert("Item successfully added to cart :)");
+               document.getElementById("cart").innerHTML='<div class="jumbotron container cart"> <div id="item_no" class="col-1">item number</div> <div id="prod_img" class="col-2"><img src="" alt=""></div> <div id="item_name" class="col-3">Item name</div> <div id="quantity" class="col-4">Quantity</a></div> <div id="subtotal" class="col-5">Subtotal</a></div><br>';
+               document.getElementById("cart1").innerHTML='<div class="jumbotron container cart"> <div id="item_no" class="col-1">'+(cartCount)+'</div>'+
+               '<div id="prod_img" class="col-2"><a href="#"><img src="http://az31823.vo.msecnd.net/content/en-us/img/catalog/products/2628_f1_bananacaramel_us.jpg" height="70%" width="50%" alt="not found"></a></div><div id="item_name" class="col-3">'+(
+               	item)+'</div>'+'<div id="quantity" class="col-4">'+(qty)+'</div>'+
+         '<div id="subtotal" class="col-5"> ₹ '+(qty*item_price)+"/-</h5></div></div>";
+                      totalCartValue+=(qty*item_price);
+                      document.getElementById("showCartTotal").innerHTML='<h4>Total Cart Value= ₹ '+totalCartValue+" /-</h4>";
+                      document.getElementById("placeOrderButton").innerHTML='<center><input type="submit" name="submit" class="btn .btn" value="Place Your Order"></center>';
+                      
+                      arrayOfItemsBoughtAndQuantity+=cartCount+". "+item+" Quantity= "+qty+"\n";
+                      document.getElementById('00N7F000006qoyA').value=totalCartValue;
+                      
+                      //RESETTING FORM VALUES
+                      
+                      document.getElementById("00N7F000003dFjX").value=null;
+             document.getElementById('00N7F000006qoxq').value=null;
+                      document.getElementById('item_price').innerHTML=null;
+               document.getElementById('total_price').innerHTML=null;
+                     
+
+               // 
+                  }
+              else
+                  {
+                      alert("Item successfully added to cart :)");
+                   document.getElementById("cart1").innerHTML+='<div class="jumbotron container cart"> <div id="item_no" class="col-1">'+(cartCount)+'</div>'+
+               '<div id="prod_img" class="col-2"><a href="#"><img src="http://az31823.vo.msecnd.net/content/en-us/img/catalog/products/2628_f1_bananacaramel_us.jpg" height="70%" width="50%" alt="not found"></a></div><div id="item_name" class="col-3">'+(
+               	item)+'</div>'+'<div id="quantity" class="col-4">'+(qty)+'</div>'+
+         '<div id="subtotal" class="col-5"> ₹ '+(qty*item_price)+"/-</h5></div></div>";
+                      totalCartValue+=(qty*item_price);
+                      document.getElementById("showCartTotal").innerHTML='<h4>Total Cart Value= ₹ '+totalCartValue+"/-";
+                      arrayOfItemsBoughtAndQuantity+=cartCount+". "+item+" Quantity= "+qty+"\n";
+                      document.getElementById("00N7F0000091uxw").value=arrayOfItemsBoughtAndQuantity;
+                      document.getElementById('00N7F000006qoyA').value=totalCartValue;
+                      
+                      
+                      //RESETTING FORM VALUES
+                      
+                      document.getElementById("00N7F000003dFjX").value=null;
+             document.getElementById('00N7F000006qoxq').value=null;
+                      document.getElementById('item_price').innerHTML=null;
+               document.getElementById('total_price').innerHTML=null;
+                  }
+              
+              //Adding values to form elements
+              
+          }//else block end
+          
+          
+          }
+      </script>
+      
+      
+      
+      
+    

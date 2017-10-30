@@ -1,0 +1,28 @@
+
+.img
+{
+  padding-left: 90px;
+  padding-top: 120px;
+}
+.Top-1
+{
+  color: #ffffff;
+  padding-left: 15%;
+  padding-right: 15%;
+
+  font-size: 5vw;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+ .error
+ {
+   align-items: left;
+  
+
+ }
+.submit_button
+{
+	background-color: #ffffff;
+}
